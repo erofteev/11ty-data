@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+
+
+
+
+<h1>{{ title }}</h1>
+<ul class="blog">
+{% for article in articles | reverse %}
+    <li class="blog__card">
+      <a class="stretch" href="/article/{{ article.url }}"><h3 class="blog__title">{{ article.title }}</h3></a>
+      <p class="blog__desc">{{ article.description }}</p>
+    </li>
+{% endfor %}
+</ul>

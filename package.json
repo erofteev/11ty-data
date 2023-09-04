@@ -1,0 +1,16 @@
+{
+  "name": "11ty-clean",
+  "version": "1.0.0",
+  "author": "Erofteev",
+  "description": "Clean 11ty",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf public && eleventy --serve",
+    "build": "eleventy"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "axios": "^1.5.0"
+  }
+}
