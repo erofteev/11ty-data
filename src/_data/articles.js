@@ -3,7 +3,7 @@ const markdownIt = require('markdown-it');
 const slugify = require('slugify');
 
 async function fetchData(query) {
-  const response = await axios.post('http://y97885rz.beget.tech/api/graphql', { query });
+  const response = await axios.post('http://cz25275.tw1.ru/api/graphql', { query });
   return response.data;
 }
 
