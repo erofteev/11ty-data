@@ -7,5 +7,6 @@ layout: base.njk
 
 <div class="content">
   <h1>{{ article.title }}</h1>
+  <time datetime="{{ article.create }}">{{ article.create | date }}</time>
   {{ article.content | safe }}
 </div>

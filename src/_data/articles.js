@@ -14,6 +14,8 @@ module.exports = async function() {
       id
       title
       content
+      create_date
+      update_date
     }
   }`);
 
@@ -29,6 +31,8 @@ module.exports = async function() {
 
     return {
       title: post.title,
+      create: post.create_date,
+      update: post.update_date,
       description: description.slice(0, 200),
       content: content,
       url: `${slugify(post.title.toLowerCase())}.html`,
