@@ -3,7 +3,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
 
   return {
-    pathPrefix: '11ty-data',
     dir: {
       input: "src",
       output: "public",
